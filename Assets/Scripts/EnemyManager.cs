@@ -19,15 +19,16 @@ public class EnemyManager : MonoBehaviour
     private void Awake()
     {
         instance = this;
+        for(int i = 0; i < maxEnemyCount; i++)
+        {
+            SpawnEnemy();
+        }
     }
 
-    private void FixedUpdate()
+    public void SpawnEnemy()
     {
-        if(enemyCount < maxEnemyCount)
-        {
-            enemyCount++;
-            Instantiate(enemy, new Vector3(Random.Range(-5, 5), player.position.y - (enemyOffset * enemyCount), 0), Quaternion.identity);
-        }
+        enemyCount++;
+        Instantiate(enemy, new Vector3(Random.Range(-5, 5), player.position.y - (enemyOffset * enemyCount), 0), Quaternion.identity);
     }
 
     public void SetMaxEnemyCount(int num)

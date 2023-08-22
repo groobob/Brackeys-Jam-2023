@@ -15,6 +15,7 @@ public class EnemyCollider : MonoBehaviour
         player.canDash = true;
         player.ApplyForce(new Vector2(boostForce * -1, 0));
         EnemyManager.instance.DecreaseEnemyCount();
+        EnemyManager.instance.SpawnEnemy();
         Destroy(gameObject);
     }
 }
