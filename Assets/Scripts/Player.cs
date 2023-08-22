@@ -69,8 +69,15 @@ public class Player : MonoBehaviour
             awaitingSecondInputD = true;
         }
 
+        // Aimed Dash
+        Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        if(Input.GetKeyDown(KeyCode.Mouse0))
+        {
+            rb.AddForce(new Vector2(mousePos.x - transform.position.x, mousePos.y - transform.position.y).normalized * aimedDashForce * 10, ForceMode2D.Impulse);
+        }
+
         // Slowed floating
-        if(Input.GetKey(KeyCode.W))
+        if(Input.GetKey(KeyCode.S))
         {
             rb.drag = floatationDrag;
         }
