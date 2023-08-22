@@ -14,8 +14,8 @@ public class Player : MonoBehaviour
     [SerializeField] float sideDashForce;
     [SerializeField] float dashWindow;
 
-    [SerializeField] float defaultFloatationDrag;
-    [SerializeField] float floatationDrag;
+    [SerializeField] float defaultGravity;
+    [SerializeField] float floatationGravity;
 
     float dashTimerA;
     float dashTimerD;
@@ -54,6 +54,7 @@ public class Player : MonoBehaviour
         {
             if(awaitingSecondInputA)
             {
+                rb.velocity = new Vector2(0, rb.velocity.y);
                 rb.AddForce(new Vector2(sideDashForce * -1 * 10, 0), ForceMode2D.Impulse);
                 awaitingSecondInputA = false;
                 dashTimerA = 0;
@@ -64,6 +65,7 @@ public class Player : MonoBehaviour
         {
             if(awaitingSecondInputD)
             {
+                rb.velocity = new Vector2(0, rb.velocity.y);
                 rb.AddForce(new Vector2(sideDashForce * 10, 0), ForceMode2D.Impulse);
                 awaitingSecondInputD = false;
                 dashTimerD = 0;
@@ -75,6 +77,7 @@ public class Player : MonoBehaviour
         Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         if(Input.GetKeyDown(KeyCode.Mouse0) && canDash)
         {
+            rb.velocity = Vector2.zero;
             rb.AddForce(new Vector2(mousePos.x - transform.position.x, mousePos.y - transform.position.y).normalized * aimedDashForce * 10, ForceMode2D.Impulse);
             canDash = false;
         }
@@ -82,11 +85,11 @@ public class Player : MonoBehaviour
         // Slowed floating
         if(Input.GetKey(KeyCode.S))
         {
-            rb.drag = floatationDrag;
+            rb.gravityScale = floatationGravity;
         }
         else
         {
-            rb.drag = defaultFloatationDrag;
+            rb.gravityScale = defaultGravity;
         }
     }
 
