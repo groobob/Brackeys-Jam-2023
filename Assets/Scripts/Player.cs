@@ -22,6 +22,8 @@ public class Player : MonoBehaviour
     bool awaitingSecondInputA = false;
     bool awaitingSecondInputD = false;
 
+    public bool canDash = true;
+
     Rigidbody2D rb;
 
     private void Awake()
@@ -71,9 +73,10 @@ public class Player : MonoBehaviour
 
         // Aimed Dash
         Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        if(Input.GetKeyDown(KeyCode.Mouse0))
+        if(Input.GetKeyDown(KeyCode.Mouse0) && canDash)
         {
             rb.AddForce(new Vector2(mousePos.x - transform.position.x, mousePos.y - transform.position.y).normalized * aimedDashForce * 10, ForceMode2D.Impulse);
+            canDash = false;
         }
 
         // Slowed floating
@@ -85,5 +88,10 @@ public class Player : MonoBehaviour
         {
             rb.drag = defaultFloatationDrag;
         }
+    }
+
+    public void ApplyForce(Vector2 input)
+    {
+        rb.AddForce(input, ForceMode2D.Impulse);
     }
 }

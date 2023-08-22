@@ -18,12 +18,12 @@ public class UIElements : MonoBehaviour
 
     void Update()
     {
-        if (lowestDepth < player.transform.position.y)
+        if (lowestDepth > player.transform.position.y)
         {
-            depthText.text = "Depth: " + (int) player.transform.position.y + "m";
+            depthText.text = "Depth: " + (int) player.transform.position.y * -1 + "m";
             lowestDepth = (int) player.transform.position.y;
         }
-        scoreText.text = "Score: " + (int)(lowestDepth * 10 + bonusScore);
+        scoreText.text = "Score: " + (-1 * lowestDepth * 10 + bonusScore);
     }
 
     public void AddScore(int score)
