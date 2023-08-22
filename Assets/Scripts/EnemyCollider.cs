@@ -7,15 +7,19 @@ public class EnemyCollider : MonoBehaviour
     [Header("Values")]
     [SerializeField] int boostForce;
 
-    [Header("Other Objects")]
-    [SerializeField] Player player;
+    private Player playerMovementScript;
+    
+    private void Awake()
+    {
+        playerMovementScript = this.GetComponent<Player>();
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        player.canDash = true;
-        player.ApplyForce(new Vector2(boostForce * -1, 0));
+        playerMovementScript.canDash = true;
+        playerMovementScript.ApplyForce(new Vector2(boostForce * -1, 0));
         EnemyManager.instance.DecreaseEnemyCount();
         EnemyManager.instance.SpawnEnemy();
-        Destroy(gameObject);
+        Destroy(collision.gameObject);
     }
 }
