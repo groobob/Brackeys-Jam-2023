@@ -14,6 +14,8 @@ public class UIElements : MonoBehaviour
     [SerializeField] GameObject player;
 
     int lowestDepth = 0;
+    int bonusScore = 0;
+
     void Update()
     {
         if (lowestDepth < player.transform.position.y)
@@ -21,5 +23,11 @@ public class UIElements : MonoBehaviour
             depthText.text = "Depth: " + (int) player.transform.position.y + "m";
             lowestDepth = (int) player.transform.position.y;
         }
+        scoreText.text = "Score: " + (int)(lowestDepth * 10 + bonusScore);
+    }
+
+    public void AddScore(int score)
+    {
+        bonusScore += score;
     }
 }
