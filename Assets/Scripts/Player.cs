@@ -24,7 +24,7 @@ public class Player : MonoBehaviour
 
     public bool canDash = true;
 
-    Rigidbody2D rb;
+    public Rigidbody2D rb;
 
     private void Awake()
     {

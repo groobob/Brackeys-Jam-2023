@@ -21,14 +21,18 @@ public class EnemyManager : MonoBehaviour
         instance = this;
         for(int i = 0; i < maxEnemyCount; i++)
         {
-            SpawnEnemy();
+            enemyCount++;
+            Instantiate(enemy, new Vector3(Random.Range(-5, 5), player.position.y - (enemyOffset * enemyCount), 0), Quaternion.identity);            
         }
     }
 
     public void SpawnEnemy()
     {
-        enemyCount++;
-        Instantiate(enemy, new Vector3(Random.Range(-5, 5), player.position.y - (enemyOffset * enemyCount), 0), Quaternion.identity);
+        if (enemyCount < maxEnemyCount)
+        {
+            enemyCount++;
+            Instantiate(enemy, new Vector3(Random.Range(-5, 5), player.position.y - (enemyOffset * maxEnemyCount), 0), Quaternion.identity);
+        }
     }
 
     public void SetMaxEnemyCount(int num)
