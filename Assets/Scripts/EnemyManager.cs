@@ -18,8 +18,10 @@ public class EnemyManager : MonoBehaviour
 
     private void Awake()
     {
+        enemyCount++;
+        Instantiate(enemy, new Vector3(Random.Range(-5, 5), player.position.y - (2 * enemyCount), 0), Quaternion.identity);
         instance = this;
-        for(int i = 0; i < maxEnemyCount; i++)
+        for(int i = 0; i < maxEnemyCount - 1; i++)
         {
             enemyCount++;
             Instantiate(enemy, new Vector3(Random.Range(-5, 5), player.position.y - (enemyOffset * enemyCount), 0), Quaternion.identity);            
