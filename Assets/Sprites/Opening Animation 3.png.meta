@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -113,9 +113,546 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Opening Animation 3_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 887
+        width: 384
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec0a0fa143bfc2245af387c1b45c943c
+      internalID: -987559624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Opening Animation 3_1
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 887
+        width: 387
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3f8687e53b71194c8be0107bc2f9973
+      internalID: 1920393789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Opening Animation 3_2
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 887
+        width: 387
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5595b05112800cb4691db42e6871b787
+      internalID: 317617640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Opening Animation 3_3
+      rect:
+        serializedVersion: 2
+        x: 1169
+        y: 887
+        width: 387
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa4bc64fa9161824f84997ce6c5a9ba5
+      internalID: -1171883420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Opening Animation 3_4
+      rect:
+        serializedVersion: 2
+        x: 1559
+        y: 887
+        width: 387
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcc3f7fcb9f33de4dbaaf8dc6a0d4cd4
+      internalID: 1686649901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Opening Animation 3_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 664
+        width: 386
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c4534f0bfb54994fb078a3fcbb8755c
+      internalID: 389334998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Opening Animation 3_6
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 664
+        width: 387
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c13fc8461e92e547ae3afb89d37c635
+      internalID: -1496594592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Opening Animation 3_7
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 664
+        width: 387
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77c7ebfc909a8ae47b89a9c4239bfc8d
+      internalID: -266862853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Opening Animation 3_8
+      rect:
+        serializedVersion: 2
+        x: 1169
+        y: 664
+        width: 387
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d902de332ced6d4fb331d9475d92ff6
+      internalID: 443810911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Opening Animation 3_9
+      rect:
+        serializedVersion: 2
+        x: 1559
+        y: 664
+        width: 387
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40882a0283b29874cb34781b6507b278
+      internalID: -686247434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Opening Animation 3_10
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 443
+        width: 384
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 387f6fecf30bde74fbe4f6052098049d
+      internalID: -1191558311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Opening Animation 3_11
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 443
+        width: 387
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1d3b0d3037df2b4b910141916192d97
+      internalID: 1270421546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Opening Animation 3_12
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 443
+        width: 387
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82748cc33b6180b429bdbf2ba787a22a
+      internalID: -1747065741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Opening Animation 3_13
+      rect:
+        serializedVersion: 2
+        x: 1169
+        y: 443
+        width: 387
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5074a7cea85d3e44beffdece0823625
+      internalID: 588815495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Opening Animation 3_14
+      rect:
+        serializedVersion: 2
+        x: 1559
+        y: 443
+        width: 387
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddcf7fb6f3a9dce49aacb80806ab2ec6
+      internalID: 208769755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Opening Animation 3_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 220
+        width: 386
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c09f4d96d3af5f2428ac19e243188fcc
+      internalID: 441110999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Opening Animation 3_16
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 220
+        width: 387
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4a106f765949364494eec74c3b90c77
+      internalID: 856149949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Opening Animation 3_17
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 220
+        width: 387
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c7637a40e981f54ab1c7200bc66e9ec
+      internalID: 1258747255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Opening Animation 3_18
+      rect:
+        serializedVersion: 2
+        x: 1169
+        y: 220
+        width: 387
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ab6a998bbfbf7448a7260a9d9db03c1
+      internalID: -2073656925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Opening Animation 3_19
+      rect:
+        serializedVersion: 2
+        x: 1559
+        y: 220
+        width: 387
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d5590778c1337b489da598c5cd7d31d
+      internalID: 1759322262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Opening Animation 3_20
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2
+        width: 384
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 343ba6d7a920f614fbbb3afe9b93c2ef
+      internalID: 401368471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Opening Animation 3_21
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 2
+        width: 387
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f0f81f5ea070824bada10350e2e0f29
+      internalID: -700294241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Opening Animation 3_22
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 2
+        width: 387
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b618d3cf1fa3664889da28a276f342d
+      internalID: 1978492037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Opening Animation 3_23
+      rect:
+        serializedVersion: 2
+        x: 1169
+        y: 2
+        width: 387
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 580cc9d58a95d6b4f893693c5734cc1d
+      internalID: -1744594841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Opening Animation 3_24
+      rect:
+        serializedVersion: 2
+        x: 1559
+        y: 2
+        width: 387
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06f2fc1a99559a44195720a064b6bfa2
+      internalID: -272679966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -126,7 +663,32 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Opening Animation 3_6: -1496594592
+      Opening Animation 3_7: -266862853
+      Opening Animation 3_8: 443810911
+      Opening Animation 3_19: 1759322262
+      Opening Animation 3_23: -1744594841
+      Opening Animation 3_24: -272679966
+      Opening Animation 3_15: 441110999
+      Opening Animation 3_0: -987559624
+      Opening Animation 3_9: -686247434
+      Opening Animation 3_4: 1686649901
+      Opening Animation 3_18: -2073656925
+      Opening Animation 3_11: 1270421546
+      Opening Animation 3_1: 1920393789
+      Opening Animation 3_10: -1191558311
+      Opening Animation 3_22: 1978492037
+      Opening Animation 3_16: 856149949
+      Opening Animation 3_14: 208769755
+      Opening Animation 3_2: 317617640
+      Opening Animation 3_20: 401368471
+      Opening Animation 3_5: 389334998
+      Opening Animation 3_17: 1258747255
+      Opening Animation 3_3: -1171883420
+      Opening Animation 3_13: 588815495
+      Opening Animation 3_21: -700294241
+      Opening Animation 3_12: -1747065741
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
