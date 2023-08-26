@@ -16,6 +16,7 @@ public class CreateEnemyType : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        playerLoc = this.transform.parent.gameObject.GetComponent<EnemyManager>().distanceFromPlayer().transform;
         sprtR = this.GetComponent<SpriteRenderer>();
         rb = this.GetComponent<Rigidbody2D>();
 
@@ -26,13 +27,16 @@ public class CreateEnemyType : MonoBehaviour
 
         if(randomtype >= 33 && randomtype < 95)
             randomtype = 0;
-
-        if(randomtype >= 95 && randomtype < 100)
-            randomtype = 2;    
+        if(playerLoc.position.y < -70)
+        {
+            if(randomtype >= 95 && randomtype < 100)
+                randomtype = 2;
+        }    
+        else if (randomtype >= 95 && randomtype < 100)
+            randomtype = 1;
         
         enemyType = this.transform.parent.gameObject.GetComponent<listAndAccessToEnemyTypes>().getEnemyType(randomtype);
 
-        playerLoc = this.transform.parent.gameObject.GetComponent<EnemyManager>().distanceFromPlayer().transform;
         facing = Random.Range(-1, 1);
 
         if(enemyType.EnemyName == "MovingFish")
@@ -40,8 +44,10 @@ public class CreateEnemyType : MonoBehaviour
         if(enemyType.EnemyName == "FastMovingFish")
             sprtR.color = new Color(.99f,.99f,.99f,1);
         if(enemyType.EnemyName == "DeathFish")
+        {
             sprtR.color = new Color(1f,0f,0f,1);
-
+            this.gameObject.layer = 7;
+        }
         fishSpeed = enemyType.speed;
 
         if(facing == 0)

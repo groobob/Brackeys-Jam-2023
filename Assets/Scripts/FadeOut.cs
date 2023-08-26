@@ -16,7 +16,10 @@ public class FadeOut : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        sprtR.color = new Color(0.3910199f,0.7376195f,0.8207547f,x);
-        x = x - .001f;
+        if(x>-.1f)
+        {
+            sprtR.color = new Color(0.3910199f,0.7376195f,0.8207547f,x);
+            x = x - .001f;
+        }
     }
 }
