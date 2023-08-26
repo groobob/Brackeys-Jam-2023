@@ -6,8 +6,9 @@ public class EnemyCollider : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        EnemyManager.instance.DecreaseEnemyCount();
-        EnemyManager.instance.SpawnEnemy();
+        if(collision.gameObject.name == "Player")
+        {
         Destroy(gameObject);
+        }
     }
 }

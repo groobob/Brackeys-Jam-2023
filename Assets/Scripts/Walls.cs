@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class Walls : MonoBehaviour
 {
-    [SerializeField] Transform player;
+    [SerializeField] Transform camerapos;
 
     void Update()
     {
-        if(transform.position.y > player.position.y) transform.position = new Vector3(transform.position.x, player.position.y, transform.position.z);
+        transform.position = new Vector3(transform.position.x, camerapos.position.y+2, transform.position.z);
     }
 }
