@@ -52,7 +52,7 @@ public class Player : MonoBehaviour
         if(dashEffect < 1f)
         {
             sprtR.color = new Color(dashEffect, dashEffect, dashEffect, 1);
-            dashEffect += .1f;
+            dashEffect += .01f;
         }
         // Movement
         rb.AddForce(new Vector2(Input.GetAxis("Horizontal") * Time.deltaTime * movementSpeed * 1000, 0), ForceMode2D.Force);

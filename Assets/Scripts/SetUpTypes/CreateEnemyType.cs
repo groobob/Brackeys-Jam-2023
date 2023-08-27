@@ -92,12 +92,12 @@ public class CreateEnemyType : MonoBehaviour
             if(inChange == false)
             {
                 sprtR.color = new Color(.7f,.32f,.5f,changingForms);
-                changingForms -= .001f;
+                changingForms -= .01f;
             }
             if(inChange == true)
             {
                 sprtR.color = new Color(.7f,.32f,.5f,changingForms);
-                changingForms += .001f;
+                changingForms += .01f;
             }
 
             if(changingForms >= 0f)

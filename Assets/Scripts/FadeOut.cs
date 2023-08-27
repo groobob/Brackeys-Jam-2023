@@ -19,7 +19,7 @@ public class FadeOut : MonoBehaviour
         if(x>-.1f)
         {
             sprtR.color = new Color(0.3910199f,0.7376195f,0.8207547f,x);
-            x = x - .1f;
+            x = x - .01f;
         }
     }
 }
