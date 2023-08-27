@@ -42,7 +42,7 @@ public class PlayerCollision : MonoBehaviour
         if(isDead == true)
         {
             fadingIn.color = new Color(0f,0f,0f,x);
-            x = x +.001f;
+            x = x +.1f;
         }
         if(x > .99f)
         {

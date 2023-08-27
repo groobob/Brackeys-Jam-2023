@@ -37,7 +37,7 @@ public class Animation : MonoBehaviour
         if(fadeOut == true && x < 1)
         {
             fadeBlock.color = new Color(0.3910199f,0.7376195f,0.8207547f,x);
-            x = x + .001f;
+            x = x + .1f;
         }
         else if(x > .99f)
         {
