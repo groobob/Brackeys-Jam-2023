@@ -28,7 +28,7 @@ public class PlayerCollision : MonoBehaviour
             fadingIn = GameObject.Find("FadingOut").GetComponent<SpriteRenderer>();
             isDead = true;
         }
-        if(collision.gameObject.layer != 7)
+        else if(collision.gameObject.layer != 7)
         {
             playerMovementScript.canDash = true;
             playerMovementScript.rb.velocity = Vector2.zero;
